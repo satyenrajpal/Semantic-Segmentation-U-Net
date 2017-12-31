@@ -8,7 +8,7 @@ import os
 import random
 
 class Model_Unet:
-    def __init__(self):
+    def __init__(self, in_dir):
         """
         in_dir: Directory containing the Images and Labelled Masks in the following directory structure 
         (Directory names are within -- --)
@@ -20,7 +20,7 @@ class Model_Unet:
             -- Train -- (Training Masks)
             -- Validation -- (Validation Masks)
         """
-        self.dataset = ct.cache(cache_path='my_dataset_cache.pkl', fn=ct.Dataset,in_dir='vaihingen\data_labels')
+        self.dataset = ct.cache(cache_path='my_dataset_cache.pkl', fn=ct.Dataset,in_dir=in_dir)
         #get Training Images and masks
         self.train_imgs = self.dataset.train_imgs
         self.train_masks = self.dataset.train_masks
@@ -343,7 +343,7 @@ class Model_Unet:
         
         
             
-model = Model_Unet()
+model = Model_Unet('vaihingen\data_labels')
 model.train()
 #batch_prediction, actual_pred,joined_predictions = model.test()
 #final = model.convert_classes_to_color(joined_predictions)
