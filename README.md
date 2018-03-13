@@ -8,10 +8,10 @@ Requirements-
 
 This code saves the data in a cache file (if the cache file is not present) and then reuses the cached file. Please adhere to the following directory structure:<br />
  
- Markup : * Bullet list
-             * Nested bullet
-                 * Sub-nested bullet etc
-          * Bullet list item 2
+* Bullet list
+   * Nested bullet
+      * Sub-nested bullet etc
+* Bullet list item 2
 
 Argument | Description
 --- | --- 
