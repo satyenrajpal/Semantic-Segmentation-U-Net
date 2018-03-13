@@ -13,7 +13,7 @@ Results -
 
 Input Image | Output Image
 --- | --- 
-![](/docs/output_0_72.png)| ![](/docs/output_0_72.png) 
+![](/docs/30.jpg)| ![](/docs/ouptut_0_72.png) 
 
 This code saves the data in a cache file (if the cache file is not present) and then reuses the cached file. Please adhere to the following directory structure:<br />
 
