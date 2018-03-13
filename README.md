@@ -2,31 +2,43 @@
 
 This is a TensorFlow implementation of Semantic Segmentation based on the [U-Net Architecture](https://arxiv.org/abs/1505.04597) for the ISPRS Dataset (vaihingen). 
 
+The network expects a 572x572 image input. The architecture is defined as follows-
+![](/docs/Architecture.png)
+
 Requirements-
 - Tensorflow
 - OpenCV
 
+Results - 
+
+Input Image | Output Image
+--- | --- 
+![](30.jpg)| ![](output_0_72.png) 
+
 This code saves the data in a cache file (if the cache file is not present) and then reuses the cached file. Please adhere to the following directory structure:<br />
- 
-* Bullet list
-   * Nested bullet
-      * Sub-nested bullet etc
-* Bullet list item 2
+
+* in_dir
+  * Training Images - (Contains 3 folders)
+     * Train - (training Images)
+     * Test - Test Images
+     * Validation - validation images
+  * Labels_classes - (Contains 2 folders)
+     * Train - (Training masks)
+     * Validation - (Validation Masks)
+
+To run the code run the following command-
+`python UNet_ISPRS_class.py` with the following arguments:
 
 Argument | Description
 --- | --- 
-`--env=ENVIRONMENT_NAME`| CartPole-v0, MountainCar-v0 
-`--render=1 OR 0` | variable to enable render(1) or not(0)
-`--train=1 OR 0` |  variable to train(1) the model or not(0) 
-`--type=MODEL_TYPE` | DQN,Dueling
-`--save_folder=FOLDER_DIR`| folder directory to save videos (Optional). Videos are not saved if nothing is given
-`--model_file=FILE_DIR` | File directory of saved model(Optional). Nothing is done if not given 
-To run 
+`--cache_file=CACHE_FILE_PATH`|  If not cached file not present, give any name; a file shall be created   
+`--in_dir=DIRECTORY_PATH` | Path to 'in_dir' as described above
+`--save_dir=DIR_NAME` |  Directory in which to save model 
+`--train_logdir=DIR_NAME` | Directory in which to save training results
+`--test_folder=DIR_NAME`| Directory in which to save test results
 
 
-The network expects a 572x572 image input. The architecture is defined as follows-
 
-![](/docs/Architecture.png)
 
 
 
