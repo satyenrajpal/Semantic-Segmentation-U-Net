@@ -6,7 +6,7 @@ Requirements-
 - Tensorflow
 - OpenCV
 
-This code saves the data in a cache file (if the cache file is not present) and then reuses the cached file. Please adhere to the following directory structure:
+This code saves the data in a cache file (if the cache file is not present) and then reuses the cached file. Please adhere to the following directory structure:<br />
 `--Images-- (Contains 3 folders)`<br />
    `-- Train -- (training Images)` <br />
    -- Test -- (Test Images)
@@ -14,7 +14,11 @@ This code saves the data in a cache file (if the cache file is not present) and 
  -- Labels_classes -- (Contains 2 folders)
     -- Train -- (Training Masks)
     -- Validation -- (Validation Masks)`
-
+ 
+ `Markup : * Bullet list
+              * Nested bullet
+                  * Sub-nested bullet etc
+          * Bullet list item 2
 Argument | Description
 --- | --- 
 `--env=ENVIRONMENT_NAME`| CartPole-v0, MountainCar-v0 
