@@ -1,5 +1,6 @@
 import tensorflow as tf
 import numpy as np
+
 def conv_conv_pool(input_, output_filt, input_filt,training, name, pool=True, activation=tf.nn.relu):
     
      net = input_
