@@ -1,6 +1,7 @@
 # Frugal-Semantic-Segmentation-U-Net
 
-This is a TensorFlow implementation of Semantic Segmentation based on the [U-Net Architecture](https://arxiv.org/abs/1505.04597) for the ISPRS Dataset (vaihingen) with an improvement to help predict class segments that constitute a small proportional of all labels. Essentially, the idea is to remove labels of classes that constitute a large proportion of the dataset, in other words reduce bias. <br>
+This is a TensorFlow implementation of Semantic Segmentation based on the [U-Net Architecture](https://arxiv.org/abs/1505.04597) for the ISPRS Dataset (vaihingen) with an improvement to help predict class segments that constitute a small proportional of all labels. Essentially, the idea is to remove labels of classes that constitute a large proportion of the dataset, in other words reduce bias. <br> <br>
+
 In this project, we optimized over 35.29% (programatically reducing labels corresponding to 'house', 'vegetation' and 'road' classes) of the complete labels. As seen in the results, when optimizing over all labels, the network is unable to segment 'cars' (yellow) pixels. However, when optimizing over a pruned dataset not only are the pixels for cars predicted, we achieve an accuracy of 78%.
 
 The network expects a 572x572 image input. The architecture is defined as follows-
