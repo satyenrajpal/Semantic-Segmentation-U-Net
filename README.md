@@ -37,9 +37,9 @@ Argument | Description
 
 Results - 
 Conventional Semantic Segmentation <br>
-Input Image | Conventional Segmentation | Frugal Segmentation 
- --- | --- | --- 
-![](/docs/30.jpg)| ![](/docs/ouptut_0_72.png) | ![](/docs/0.jpg)
+Input Image | Conventional Segmentation 
+ --- | --- 
+![](/docs/30.jpg)| ![](/docs/ouptut_0_72.png) 
 
 
 
